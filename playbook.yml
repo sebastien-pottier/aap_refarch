@@ -1,12 +1,11 @@
 ---
-- name: Include all files in vars directory
-  include_vars:
-    dir: vars
 - name: Playbook to configure ansible Controller post installation
   hosts: localhost
   connection: local
   vars:
     #controller_validate_certs: false
+  vars_files:
+    - /vars/*.yml
   collections:
     - awx.awx
     - redhat_cop.controller_configuration
