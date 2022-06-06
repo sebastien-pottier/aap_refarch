@@ -3,9 +3,5 @@ controller_projects:
   - name: Ajout Rebond
     scm_type: git
     scm_url: https://github1.intranet.pottier.eu/ansible/creation_rebond.git
-    scm_branch: main
-    scm_clean: true
     description: Ajout Rebond
     organization: Default
-    wait: true
-    update: true
