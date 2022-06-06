@@ -3,3 +3,4 @@ controller_user_accounts:
   - user: "seb"
     is_superuser: false
     password: "P@ssw0rd!"
+...
