@@ -4,8 +4,8 @@
   connection: local
   vars:
     #controller_validate_certs: false
-  vars_files:
-    - /vars/*.yml
+  include_vars:
+    - vars/*.yml
   collections:
     - awx.awx
     - redhat_cop.controller_configuration
