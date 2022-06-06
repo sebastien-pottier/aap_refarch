@@ -1,4 +1,7 @@
 ---
+- name: Include all files in vars directory
+  include_vars:
+    dir: vars
 - name: Playbook to configure ansible Controller post installation
   hosts: localhost
   connection: local
