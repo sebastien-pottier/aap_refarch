@@ -7,11 +7,11 @@ controller_projects:
     organization: Default
     credential: GitHub Credential
 controller_credentials:
-  - name: Credentials for vCenter
-    description: Credentials for vCenter
+  - name: vCenter Credential
+    description: vCenter Credential
     organization: Default
     credential_type: VMware vCenter
     inputs:
       username: administrator@vsphere.local
       password: P@ssw0rd!
-      vcenter_host: vcenter.intranet.pottier.eu
+      host: vcenter.intranet.pottier.eu
