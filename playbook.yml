@@ -1,10 +1,11 @@
 ---
-- name: Include vars
+- hosts: localhost
   include_vars:
-    dir: vars/all
+    dir: vars
     extensions:
       - 'yaml'
       - 'yml'
+
 - name: Playbook to configure ansible Controller post installation
   hosts: localhost
   connection: local
