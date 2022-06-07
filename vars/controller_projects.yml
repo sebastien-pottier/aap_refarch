@@ -14,3 +14,4 @@ controller_credentials:
     inputs:
       username: administrator@vsphere.local
       password: P@ssw0rd!
+      vcenter_host: vcenter.intranet.pottier.eu
