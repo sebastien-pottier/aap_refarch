@@ -5,3 +5,4 @@ controller_projects:
     scm_url: https://github1.intranet.pottier.eu/ansible/creation_rebond.git
     description: Ajout Rebond
     organization: Default
+    credential: GitHub Credential
