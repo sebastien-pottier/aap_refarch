@@ -3,7 +3,7 @@ controller_projects:
   - name: Ajout Rebond
     scm_type: git
     scm_url: https://github1.intranet.pottier.eu/ansible/creation_rebond.git
-    description: Ajout Rebhttps://github1.intranet.pottier.eu/POTTIER-EU/aap_refarch/tree/main/varsond
+    description: Ajout Rebond
     organization: Default
     credential: GitHub Credential
 controller_credentials:
