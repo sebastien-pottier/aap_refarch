@@ -1,16 +1,14 @@
 ---
-- hosts: localhost
-  include_vars:
-    dir: vars
-    extensions:
-      - 'yaml'
-      - 'yml'
-
 - name: Playbook to configure ansible Controller post installation
   hosts: localhost
   connection: local
   vars:
     #controller_validate_certs: false
+  include_vars:
+    dir: vars
+    extensions:
+      - 'yaml'
+      - 'yml'
   collections:
     - awx.awx
     - redhat_cop.controller_configuration
