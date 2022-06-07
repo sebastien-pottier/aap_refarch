@@ -15,6 +15,18 @@
         "type": "text"
       },
       {
+        "question_description": "cluster",
+        "min": 0,
+        "default": "Cluster",
+        "max": 128,
+        "required": true,
+        "choices": "",
+        "new_question": true,
+        "variable": "vm_cluster",
+        "question_name": "Cluster Name",
+        "type": "text"
+      },
+      {
         "question_description": "datastore",
         "min": 0,
         "default": "DS-nas-1",
