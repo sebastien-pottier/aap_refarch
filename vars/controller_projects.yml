@@ -23,3 +23,8 @@ controller_templates:
     playbook: create_vm.yml
     credentials:
     - vCenter Credential
+    - extra_vars:
+      rebond_template: win10_pro_x64_packer_template_2022_05
+      rebond_datastore: DS-nas-1
+      rebond_folder: Mainteneurs
+      rebond_datacenter: Datacenter
