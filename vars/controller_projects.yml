@@ -13,5 +13,5 @@ controller_credentials:
     credential_type: VMware vCenter
     inputs:
       username: administrator@vsphere.local
-      password: P@ssw0rd!
+      password: Rootroot123+
       host: vcenter.intranet.pottier.eu
