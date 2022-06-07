@@ -3,6 +3,14 @@ controller_projects:
   - name: Ajout Rebond
     scm_type: git
     scm_url: https://github1.intranet.pottier.eu/ansible/creation_rebond.git
-    description: Ajout Rebond
+    description: Ajout Rebhttps://github1.intranet.pottier.eu/POTTIER-EU/aap_refarch/tree/main/varsond
     organization: Default
     credential: GitHub Credential
+controller_credentials:
+  - name: Credentials for vCenter
+    description: Credentials for vCenter
+    organization: Default
+    credential_type: VMware vCenter
+    inputs:
+      username: administrator@vsphere.local
+      password: P@ssw0rd!
