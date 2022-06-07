@@ -15,3 +15,11 @@ controller_credentials:
       username: administrator@vsphere.local
       password: Rootroot123+
       host: vcenter.intranet.pottier.eu
+controller_templates:
+  - name: Create VM
+    job_type: run
+    inventory: Demo Inventory
+    project: Ajout Rebond
+    playbook: create_vm.yml
+    credentials:
+    - vCenter Credential
