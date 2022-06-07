@@ -19,13 +19,9 @@ controller_templates:
   - name: Create VM
     job_type: run
     inventory: Demo Inventory
+    survey_enabled: true
+    survey: "{{ lookup('template', 'template_surveys/create_vm.json') | regex_replace('\\n', '') }}"
     project: Ajout Rebond
     playbook: create_vm.yml
     credentials:
     - vCenter Credential
-    - extra_vars:
-      ---
-      rebond_template: win10_pro_x64_packer_template_2022_05
-      rebond_datastore: DS-nas-1
-      rebond_folder: Mainteneurs
-      rebond_datacenter: Datacenter

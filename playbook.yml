@@ -5,7 +5,7 @@
   vars:
     #controller_validate_certs: false
   vars_files:
-    - vars/controller_projects.yml
+    - automations/creation_rebond.yml
   collections:
     - awx.awx
     - redhat_cop.controller_configuration
