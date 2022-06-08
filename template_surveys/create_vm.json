@@ -53,7 +53,7 @@
       {
         "question_description": "folder",
         "min": 0,
-        "default": "win10_pro_x64_packer_template_2022_05",
+        "default": "Mainteneurs",
         "max": 128,
         "required": true,
         "choices": "",
