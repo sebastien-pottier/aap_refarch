@@ -3,6 +3,18 @@
     "description": "Creation VM",
     "spec": [
       {
+        "question_description": "name",
+        "min": 0,
+        "default": "",
+        "max": 128,
+        "required": true,
+        "choices": "",
+        "new_question": true,
+        "variable": "vm_name",
+        "question_name": "VM Name",
+        "type": "text"
+      },
+      {
         "question_description": "template",
         "min": 0,
         "default": "win10_pro_x64_packer_template_2022_05",
