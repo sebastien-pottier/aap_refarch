@@ -17,9 +17,19 @@ controller_templates:
     - vCenter Credential
     extra_vars:
       packer_env:
-        PKR_VAR_vcenter_server: vcenter.intranet.pottier.eu
         PKR_VAR_vcenter_cluster: Cluster
         PKR_VAR_vcenter_datacenter: Datacenter
         PKR_VAR_vcenter_host: esx1.intranet.pottier.eu
         PKR_VAR_vcenter_datastore: DS-nas-1
         PKR_VAR_vcenter_folder: packer-templates/win
+        PKR_VAR_vm_name: win10_pro_x64_packer_template
+        PKR_VAR_vm_network: VM Network
+        PKR_VAR_vm_guest_os_type: windows9_64Guest
+        PKR_VAR_vm_version: 19
+        PKR_VAR_vm_cpu_num: 2
+        PKR_VAR_vm_ram: 8192
+        PKR_VAR_vm_disk_size: 81920
+        PKR_VAR_os_username: Packer
+        PKR_VAR_os_password_workstation: P@ssw0rd!
+        PKR_VAR_os_iso_path: [DS-ISO] windows_10_x64_21H2.iso
+        PKR_VAR_vmtools_iso_path: [DS-ISO] windows_vmware_tools_v12.0.0-19345655.iso
