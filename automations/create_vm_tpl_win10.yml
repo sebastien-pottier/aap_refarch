@@ -30,6 +30,6 @@ controller_templates:
         PKR_VAR_vm_ram: 8192
         PKR_VAR_vm_disk_size: 81920
         PKR_VAR_os_username: Packer
-        PKR_VAR_os_password_workstation: P@ssw0rd!
-        PKR_VAR_os_iso_path: [DS-ISO] windows_10_x64_21H2.iso
-        PKR_VAR_vmtools_iso_path: [DS-ISO] windows_vmware_tools_v12.0.0-19345655.iso
+        PKR_VAR_os_password_workstation: 'P@ssw0rd!'
+        PKR_VAR_os_iso_path: '[DS-ISO] windows_10_x64_21H2.iso'
+        PKR_VAR_vmtools_iso_path: '[DS-ISO] windows_vmware_tools_v12.0.0-19345655.iso'
