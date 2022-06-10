@@ -1,0 +1,25 @@
+---
+controller_projects:
+  - name: Create VM Template Windows 10
+    scm_type: git
+    scm_url: https://github1.intranet.pottier.eu/ansible/packer-hcl-w10.git
+    description: Create VM Template Windows 10
+    organization: Default
+    credential: GitHub Credential
+controller_templates:
+  - name: Create VM Template Windows 10
+    job_type: run
+    inventory: Demo Inventory
+    project: Create VM Template Windows 10
+    execution_environment: Automation Hub HashiCorp Packer EE
+    playbook: run_packer.yml
+    credentials:
+    - vCenter Credential
+    extra_vars:
+      packer_env:
+        PKR_VAR_vcenter_server: vcenter.intranet.pottier.eu
+        PKR_VAR_vcenter_cluster: Cluster
+        PKR_VAR_vcenter_datacenter: Datacenter
+        PKR_VAR_vcenter_host: esx1.intranet.pottier.eu
+        PKR_VAR_vcenter_datastore: DS-nas-1
+        PKR_VAR_vcenter_folder: packer-templates/win
