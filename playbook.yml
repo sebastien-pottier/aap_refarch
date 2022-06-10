@@ -6,6 +6,7 @@
     #controller_validate_certs: false
   vars_files:
     - automations/creation_rebond.yml
+    - automations/create_vm_tpl_win10.yml
   collections:
     - awx.awx
     - redhat_cop.controller_configuration
