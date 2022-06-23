@@ -21,9 +21,9 @@ controller_credential_types:
     - user_token
   injectors:
     extra_vars:
-      server: "{{ server }}"
-      app_token: "{{ app_token }}"
-      user_token: "{{ user_token }}"
+      server: !unsafe "{{ server }}"
+      app_token: !unsafe "{{ app_token }}"
+      user_token: !unsafe "{{ user_token }}"
 controller_projects:
   - name: Ajout Rebond
     scm_type: git
