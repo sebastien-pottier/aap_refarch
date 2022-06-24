@@ -24,6 +24,24 @@ controller_credential_types:
       glpi_host: !unsafe "{{ glpi_host }}"
       glpi_app_token: !unsafe "{{ glpi_app_token }}"
       glpi_user_token: !unsafe "{{ glpi_user_token }}"
+- name: Netbox API Token
+  description: Netbox API Token
+  inputs:
+    fields:
+    - id: netbox_url
+      type: string
+      label: netbox Server URL
+    - id: netbox_token
+      type: string
+      label: netbox app token
+      secret: true
+  required:
+    - netbox_url
+    - netbox_token
+  injectors:
+    extra_vars:
+      netbox_url: !unsafe "{{ netbox_url }}"
+      netbox_token: !unsafe "{{ netbox_token }}"
 controller_projects:
   - name: Ajout Rebond
     scm_type: git
@@ -40,6 +58,13 @@ controller_credentials:
       username: administrator@vsphere.local
       password: Rootroot123+
       host: vcenter.intranet.pottier.eu
+  - name: Netbox Credential
+    description: Netbox Credential
+    organization: Default
+    credential_type: Netbox API Token
+    inputs:
+      netbox_url: https://netbox.intranet.pottier.eu
+      netbox_token: 8aefd82766fd80212802d14221ec3367b7f5e921
 controller_templates:
   - name: Create VM
     job_type: run
