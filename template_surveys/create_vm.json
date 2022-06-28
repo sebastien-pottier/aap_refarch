@@ -15,6 +15,18 @@
         "type": "text"
       },
       {
+        "question_description": "name",
+        "min": 0,
+        "default": "VLAN_123_DEMO_ANSIBLE",
+        "max": 128,
+        "required": true,
+        "choices": "",
+        "new_question": true,
+        "variable": "vm_network_name",
+        "question_name": "Network Name",
+        "type": "text"
+      },
+      {
         "question_description": "template",
         "min": 0,
         "default": "win10_pro_x64_packer_template_2022_05",
