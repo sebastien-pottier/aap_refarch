@@ -3,7 +3,31 @@
     "description": "Creation VM",
     "spec": [
       {
-        "question_description": "name",
+        "question_description": "Project Name",
+        "min": 0,
+        "default": "",
+        "max": 128,
+        "required": true,
+        "choices": "",
+        "new_question": true,
+        "variable": "project_name",
+        "question_name": "Project Name",
+        "type": "text"
+      },
+      {
+        "question_description": "Requester Name",
+        "min": 0,
+        "default": "",
+        "max": 128,
+        "required": true,
+        "choices": "",
+        "new_question": true,
+        "variable": "requester_name",
+        "question_name": "Requester Name",
+        "type": "text"
+      },   
+      {
+        "question_description": "VM Name",
         "min": 0,
         "default": "",
         "max": 128,
@@ -15,7 +39,7 @@
         "type": "text"
       },
       {
-        "question_description": "name",
+        "question_description": "Network Name",
         "min": 0,
         "default": "VLAN_123_DEMO_ANSIBLE",
         "max": 128,
@@ -27,7 +51,7 @@
         "type": "text"
       },
       {
-        "question_description": "template",
+        "question_description": "Template Name",
         "min": 0,
         "default": "win10_pro_x64_packer_template_2022_05",
         "max": 128,
@@ -39,7 +63,7 @@
         "type": "text"
       },
       {
-        "question_description": "cluster",
+        "question_description": "Cluster Name",
         "min": 0,
         "default": "Cluster",
         "max": 128,
@@ -51,7 +75,7 @@
         "type": "text"
       },
       {
-        "question_description": "datastore",
+        "question_description": "Datastore Name",
         "min": 0,
         "default": "DS-nas-1",
         "max": 128,
@@ -63,7 +87,7 @@
         "type": "text"
       },
       {
-        "question_description": "folder",
+        "question_description": "Folder Name",
         "min": 0,
         "default": "Mainteneurs",
         "max": 128,
@@ -75,7 +99,7 @@
         "type": "text"
       },
       {
-        "question_description": "datacenter",
+        "question_description": "Datacenter Name",
         "min": 0,
         "default": "Datacenter",
         "max": 128,
